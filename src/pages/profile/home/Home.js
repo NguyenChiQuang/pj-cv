@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import WithLayout from '../../../components/WithLayout/WithLayout';
 
-export default class Home extends Component {
+class Home extends Component {
   render() {
     return (
-      <div>
-        fuck home
+      <div className="pages-home">
+        
       </div>
     )
   }
 }
+
+export default WithLayout(Home);
