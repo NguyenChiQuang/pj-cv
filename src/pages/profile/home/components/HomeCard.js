@@ -15,7 +15,7 @@ export default class HomeCard extends Component {
 					<div className="image">
 						<img src={Avatar} alt={Avatar} />
 					</div>
-					<div className="title">Nguyen Chi Quang</div>
+					<div className="title-name">Nguyen Chi Quang</div>
 					<div className="subtitle">Web Developer</div>
 					<div className="social">
 						<NavLink to="https://dribbble.com/" activeClassName="selected"><span className="fab fa-dribbble"></span></NavLink>
