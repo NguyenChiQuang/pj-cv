@@ -4,9 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Page403 from '../errors/Page403'
 import Page404 from '../errors/Page404'
 import Page500 from '../errors/Page500'
-// import Home from '../../pages/profile/home/Home';
 import AsyncHomeProfile from '../async/AsyncHomeProfile';
-
 class App extends Component {
   render() {
     return (

@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './WithLayout.css';
+import './WithLayout.scss';
 import Header from './components/Header';
 import HomeCard from './components/HomeCard';
 
@@ -11,10 +10,14 @@ const WithLayout = (Component) => {
         <div className="app-body">
           <div className="background-profile"></div>
           <div className="container opened">
-            <Header />
-            <HomeCard />
-            <div className="card-inner contacts">
-              <Component {...this.props} />
+            <div className="body-header">
+              <Header  />
+            </div>
+            <div className="body-home_card">
+              <HomeCard />
+            </div>
+            <div className="card-inner body-content">
+              <Component {...this.props}/>
             </div>
           </div>
         </div>

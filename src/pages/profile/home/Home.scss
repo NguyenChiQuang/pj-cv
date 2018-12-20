@@ -1,0 +1,27 @@
+.background-profile {
+    background: #50a3a2;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .body-header, 
+  .body-home_card {
+    float: left;
+  }
+  .body-home_card {
+    width: 480px;
+    margin-left: 15px;
+  }
+  .body-content {
+    width: 576px;
+    height: 570px;
+    background-color: #fff; 
+    float: left;
+    overflow: hidden;
+    margin: 15px 0px;
+  }
+  

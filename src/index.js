@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom'
 import 'antd/dist/antd.css';
+import 'font-awesome/css/font-awesome.min.css';
 
+import './styles.scss';
 import history from './utils/history'
 import App from './components/app/App';
 import * as serviceWorker from './serviceWorker';
