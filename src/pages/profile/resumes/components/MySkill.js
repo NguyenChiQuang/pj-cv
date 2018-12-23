@@ -57,10 +57,10 @@ class MySkill extends Component {
   renderDesign = () => {
     const { design } = this.state;
     const result = design.map(value => (
-      <li class="border-line-h" key={value.id}> 
-        <div class="name">{value.name}</div>
-        <div class="progress">
-          <div class="percentage" style={{ width:`${value.percentage}%` }}></div>
+      <li className="border-line-h" key={value.id}> 
+        <div className="name">{value.name}</div>
+        <div className="progress">
+          <div className="percentage" style={{ width:`${value.percentage}%` }}></div>
         </div>
       </li>
     ));
@@ -70,10 +70,10 @@ class MySkill extends Component {
   renderCoding = () => {
     const { coding } = this.state;
     const result = coding.map(value => (
-      <li class="border-line-h" key={value.id}> 
-        <div class="name">{value.name}</div>
-        <div class="progress">
-          <div class="percentage" style={{ width:`${value.percentage}%` }}></div>
+      <li className="border-line-h" key={value.id}> 
+        <div className="name">{value.name}</div>
+        <div className="progress">
+          <div className="percentage" style={{ width:`${value.percentage}%` }}></div>
         </div>
       </li>
     ));

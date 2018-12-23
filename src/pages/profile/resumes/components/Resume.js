@@ -65,10 +65,10 @@ class Resume extends Component {
   renderExperience = () => {
     const { experience } = this.state;
     const result = experience.map(value => (
-      <div class={classNames("resume-item border-line-h", {active: value.active})} key={value.id}>
-        <div class="date">{value.date}</div>
-        <div class="name">{value.name}</div>
-        <div class="company">{value.company}</div>
+      <div claclassNamess={classNames("resume-item border-line-h", {active: value.active})} key={value.id}>
+        <div className="date">{value.date}</div>
+        <div className="name">{value.name}</div>
+        <div className="company">{value.company}</div>
         <p> {value.description} </p>
       </div>
     ));
@@ -78,10 +78,10 @@ class Resume extends Component {
   renderEducation = () => {
     const { education } = this.state;
     const result = education.map(value => (
-      <div class={classNames("resume-item border-line-h")} key={value.id}>
-        <div class="date">{value.date}</div>
-        <div class="name">{value.name}</div>
-        <div class="company">{value.company}</div>
+      <div className={classNames("resume-item border-line-h")} key={value.id}>
+        <div className="date">{value.date}</div>
+        <div className="name">{value.name}</div>
+        <div className="company">{value.company}</div>
         <p> {value.description} </p>
       </div>
     ));
@@ -90,28 +90,28 @@ class Resume extends Component {
   
   render() {
     return (
-      <div class="content resume">
-        <div class="title">Resume</div>
+      <div className="content resume">
+        <div className="title">Resume</div>
         <Row>
           <Col sm={24} md={12} className="col border-line">
-            <div class="resume-title border-line-h">
-              <div class="icon"><i class="ion ion-briefcase"></i></div>
-              <div class="name">Experience</div>
+            <div className="resume-title border-line-h">
+              <div className="icon"><i className="ion ion-briefcase"></i></div>
+              <div className="name">Experience</div>
             </div>
-            <div class="resume-items">
+            <div className="resume-items">
               { this.renderExperience() }
             </div>
           </Col>
           <Col sm={24} md={12} className="col border-line">
-            <div class="resume-title border-line-h">
-                <div class="icon"><i class="ion ion-university"></i></div>
-                <div class="name">Education</div>
+            <div className="resume-title border-line-h">
+                <div className="icon"><i className="ion ion-university"></i></div>
+                <div className="name">Education</div>
               </div>
-              <div class="resume-items">
+              <div className="resume-items">
                 { this.renderEducation() }
               </div>
           </Col>
-          <div class="clear"></div>
+          <div className="clear"></div>
         </Row>
       </div>
     );
