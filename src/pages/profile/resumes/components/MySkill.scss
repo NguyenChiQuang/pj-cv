@@ -1,0 +1,34 @@
+.skills-list {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      padding: 20px 0;
+      margin-bottom: 0px;
+      .name {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        line-height: 14px;
+        color: #626262;
+      }
+      .progress {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #d8dbe2;
+        .percentage {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 0%;
+          height: 100%;
+          background: #2eca7f;
+          transition: all 0.3s ease 0s;
+        }
+      }
+    }
+  }
+}

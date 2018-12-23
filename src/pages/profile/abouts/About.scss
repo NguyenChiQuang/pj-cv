@@ -14,32 +14,3 @@
   overflow-x: hidden;
   height: 100%;
 }
-.title {
-  margin: 0 0 15px 0;
-  padding: 0 0 5px 0;
-  position: relative;
-  font-size: 17px;
-  color: #171717;
-  line-height: 21px;
-  font-weight: 500;
-  &:before {
-    content: '';
-    position: absolute;
-    left: -12px;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    background: linear-gradient(135deg, rgba(46, 202, 127, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
-    z-index: 9;
-    border-radius: 30px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    left: -60px;
-    bottom: -15px;
-    width: 95%;
-    height: 1px;
-    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
-  }
-}
